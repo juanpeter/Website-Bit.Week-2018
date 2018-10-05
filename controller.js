@@ -24,4 +24,9 @@ $(document).ready(function () {
         scrollTop: $("div.menu-top").offset().top
     }, 1000)
     })
+    $('.home').click(function (){
+      $('html, body').animate({
+          scrollTop: $("div.menu-top").offset().top
+      }, 1000)
+      })
   });
