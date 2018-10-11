@@ -13,11 +13,12 @@ body{
     color: black;
     padding-top: 50px;
 }
-
-/*Cores bases!
-#1d1d59 Azul!
-#f9d334 amarelo!
-*/
+p, h1, h2, h3, h4, h5, h6, a{
+    font-weight: bold;
+}
+i{
+    font-weight: normal;
+}
 
 .header img{
     width: 50px;
