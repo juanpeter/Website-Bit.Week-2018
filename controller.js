@@ -9,17 +9,17 @@ $(document).ready(function () {
   }), 
     $('.link2').click(function (){
       $('html, body').animate({
-        scrollTop: $("div.area2").offset().top-50
+        scrollTop: $(".eixos").offset().top-50
       }, 1000)
     }),
     $('.link3').click(function (){
       $('html, body').animate({
-        scrollTop: $("div.area3").offset().top-50
+        scrollTop: $(".area2").offset().top-50
       }, 1000)
     })
     $('.link4').click(function (){
         $('html, body').animate({
-          scrollTop: $("div.area4").offset().top-50
+          scrollTop: $(".area3").offset().top-50
         }, 1000)
     })
     $('.home').click(function (){
@@ -29,5 +29,7 @@ $(document).ready(function () {
       })
 
 /*Collapse para o menu hamburguer quando clicar fora*/
-
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').removeClass('show');
+    });
 });

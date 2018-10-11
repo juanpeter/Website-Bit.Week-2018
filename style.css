@@ -61,7 +61,8 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: #191919;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +71,16 @@ body{
     background-repeat: no-repeat;
     color: #191919;
     margin-bottom: 1em;
+    align-content: center;
+}
+
+.centerbox{
+    display: flex;
+    justify-content: center;
+}
+
+.centerbox .title{
+    max-width: 350px;
 }
 
 .main{
@@ -104,6 +115,8 @@ body{
     background-position-y: 100%, 0;
     background-position-x: 0, 100%;
     margin-bottom: 10px;
+    color: #dcdcdc;
+    font-size: 18px;
 }
 
 .bloco img{
@@ -116,31 +129,52 @@ body{
     -webkit-box-shadow: 0px 0px 0px 4px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 0px 4px rgba(0,0,0,1);
     box-shadow: 0px 0px 0px 4px rgba(0,0,0,1);
-    
 }
 
-.bloco p{
-    text-align: justify
+.eixos{
+    background-color: white;
+    color: black;
 }
 
-/*Pode ser util para alinhar o conteudo*/
-.texto{
-    color: #dcdcdc;
-}
-
-.seta{
+.icones{
     font-size: 50px;
-    float: right;
-}
-
-.seta:hover{
+    padding-top: 20px;
     color: #f9d334;
 }
 
-.edicoes-anteriores{
-    height: 100%;
-    background-color: gray;
-    padding: 40px 0;
+.icones .col-xs-4{
+    height: 200px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top:20px;
+    word-break:break-all;
+     /* Fallback for web browsers that don't support RGBa */
+     background-color: rgb(0, 0, 0);
+     /* RGBa with 0.6 opacity */
+     background-color: rgba(0, 0, 0, 0.8);
+     /* For IE 5.5 - 7*/
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+     /* For IE 8*/
+     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+}
+
+.icones .col-xs-4 p{
+    font-size: 18px;
+}
+.area3{
+    background-color: white;
+    padding: 30px 0;
+    color: black;
+}
+
+.area3 p{
+    font-size: 24px;
+}
+
+.texto{
+    color: #dcdcdc;
+    text-align: justify
 }
 
 .home:hover{
@@ -154,7 +188,7 @@ a:link{
 }
 
 .footer{
-    background-color: #1d1d59;
+    background-color: #333;
     height: 100%;
     padding: 20px;
     border-style: solid;
@@ -174,11 +208,34 @@ a:link{
     border-color: #dcdcdc;
     border-width: 2px;
 }
+
+.botao2{
+    width: 80%;
+    height: 120px;
+    font-size: 2rem;
+    margin: 20px;
+    background-color: #333;
+    color: #dcdcdc;
+    border-color: #dcdcdc;
+    border-width: 2px;
+}
+
+.botao2:hover{
+    color: #333;
+    background-color: #f9d334;
+    border-color: #6b5f2c;
+    border-width: 2px;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+
 .botao:hover{
     color: #f9d334;
     background-color: #222268;
-    border-color: #f9d334;
+    border-color: #6b5f2c;
     border-width: 2px;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
 }
 
 .botao:focus{
@@ -202,6 +259,8 @@ a:link{
     margin-bottom: 10px;
     text-decoration: none;
     color:#f9d334;
+    -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
 }
 
 #fb:hover{
