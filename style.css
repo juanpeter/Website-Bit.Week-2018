@@ -64,15 +64,12 @@ i{
     border-color: #191919;
     width: 100%;
     max-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url("images/minibg.png");
     background-position: 100% 10%;
     background-repeat: no-repeat;
     color: #191919;
     margin-bottom: 1em;
-    align-content: center;
+    padding-left: 20px;
 }
 
 .centerbox{
@@ -160,6 +157,7 @@ i{
      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
 }
 
+
 .icones .col-xs-4 p{
     font-size: 18px;
 }
@@ -180,6 +178,20 @@ i{
 
 .home:hover{
     cursor: pointer;
+}
+
+.faixa{
+    height: 100%;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    margin-bottom: 40px;
+    color: #dcdcdc;
 }
 
 /*Código velho!*/
@@ -208,26 +220,7 @@ a:link{
     color: #dcdcdc;
     border-color: #dcdcdc;
     border-width: 2px;
-}
-
-.botao2{
-    width: 80%;
-    height: 120px;
-    font-size: 2rem;
-    margin: 20px;
-    background-color: #333;
-    color: #dcdcdc;
-    border-color: #dcdcdc;
-    border-width: 2px;
-}
-
-.botao2:hover{
-    color: #333;
-    background-color: #f9d334;
-    border-color: #6b5f2c;
-    border-width: 2px;
-    -webkit-transition: background-color 0.25s; /* Safari */
-    transition: background-color 0.25s;
+    font-weight: bold;
 }
 
 .botao:hover{
@@ -244,6 +237,33 @@ a:link{
     background-color: #222268;
     border-color: #f9d334;
     border-width: 2px;
+}
+
+.botao2{
+    width: 80%;
+    height: 120px;
+    font-size: 2rem;
+    margin: 20px;
+    background-color: #333;
+    color: #dcdcdc;
+    border-color: #dcdcdc;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.botao2:hover{
+    color: #333;
+    background-color: #f9d334;
+    border-color: #6b5f2c;
+    border-width: 2px;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+
+.botao2:focus{
+    color: #333;
+    background-color: #f9d334;
+    border-color: #6b5f2c;
 }
 
 #img-row{
