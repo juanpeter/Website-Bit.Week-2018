@@ -228,8 +228,8 @@ a:link{
     background-color: #222268;
     border-color: #6b5f2c;
     border-width: 2px;
-    -webkit-transition: background-color 0.25s; /* Safari */
-    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.5; /* Safari */
+    transition: background-color 0.5s;
 }
 
 .botao:focus{
@@ -240,7 +240,7 @@ a:link{
 }
 
 .botao2{
-    width: 80%;
+    width: 9em;
     height: 120px;
     font-size: 2rem;
     margin: 20px;
@@ -256,14 +256,38 @@ a:link{
     background-color: #f9d334;
     border-color: #6b5f2c;
     border-width: 2px;
-    -webkit-transition: background-color 0.25s; /* Safari */
-    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.5; /* Safari */
+    transition: background-color 0.5s;
 }
 
 .botao2:focus{
     color: #333;
     background-color: #f9d334;
     border-color: #6b5f2c;
+}
+
+.botao3{
+    background-color: transparent;
+    color: #dcdcdc;
+    border-color: #dcdcdc;
+    border-width: 2px;
+    font-size: 18px;
+    width: 18em;
+    height: 60px;
+    margin: 40px 20px 0 20px;
+}
+
+.botao3:hover{
+    color: #333;
+    background-color: #f9d334;
+    -webkit-transition: background-color 0.5; /* Safari */
+    transition: background-color 0.5s;
+}
+
+.botao3:focus{
+    background-color: transparent;
+    color: #dcdcdc;
+    border-color: #f9d334;
 }
 
 #img-row{

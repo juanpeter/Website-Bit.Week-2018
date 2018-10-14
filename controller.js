@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
 /*Scroll para as divs!*/
     $('.link1').click(function() {
     $('html, body').animate({
